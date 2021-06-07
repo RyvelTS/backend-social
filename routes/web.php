@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\C;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return CURRENT_TIMESTAMP;
-});
+Route::get('/', [C::class, 'index']);

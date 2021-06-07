@@ -5,10 +5,11 @@
 <h5>Awal Clone</h5>
 <ul>
     <li>Buat sebuah db dengan nama &lt;nama_db$&gt;</li>
-    <li>Jalankan: <pre>composer install</pre></li>
     <li>Jalankan: <pre>composer dump-autoload</pre></li>
+    <li>Jalankan: <pre>composer install</pre></li>
     <li>Copy file <strong>.env.example</strong>, lalu ubah nama menjadi <strong>.env</strong></li>
     <li>Jalankan: <pre>php artisan key:generate</pre></li>
+    <li>Jalankan: <pre>php artisan storage:link</pre></li>
 </ul>
 
 <h5>Database</h5>

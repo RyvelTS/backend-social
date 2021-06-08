@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace App\ORM\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class VoteComment extends Model
+class CloseFriend extends Model
 {
     use HasFactory;
 }

@@ -1,4 +1,12 @@
 <?php
 
 define('DEFAULT_PROFILE_PICTURE', '/storage/images/user/default.png');
-define('CURRENT_TIMESTAMP', (new DateTime("now", new DateTimeZone('Asia/Jakarta')))->format('Y-m-d H:i:s'));
+
+define('FOLDER_POSTS', '/storage/images/post/');
+define('FOLDER_USERS', '/storage/images/user/');
+
+define('MALE', 'male');
+define('FEMALE', 'female');
+
+define('UPVOTE', 1);
+define('DOWNVOTE', -1);

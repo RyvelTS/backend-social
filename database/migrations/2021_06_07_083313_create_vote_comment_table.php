@@ -17,9 +17,8 @@ class CreateVoteCommentTable extends Migration
             $table->id();
             $table->bigInteger('user')->unsigned();
             $table->bigInteger('comment')->unsigned();
-            $table->string('reply');
-            $table->timestamps();
-            $table->softDeletes();
+            $table->tinyInteger('vote')->nullable();
+            $table->timestamp('created_at')->default(CURRENT_TIMESTAMP);
         });
 
         Schema::table('vote_comment', function (Blueprint $table) {

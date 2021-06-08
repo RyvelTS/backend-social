@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace App\ORM\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Follow extends Model
+class ReplyComment extends Model
 {
     use HasFactory;
 }

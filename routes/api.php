@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("/", function () {
-    return response()->json([
-        'status' => true,
-        'message' => 'Test api app',
-    ], 200);
-});
+Route::get("/login", [AuthController::class, 'login']);
